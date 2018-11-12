@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://schema.soap.ws.nikita.com"
+           targetNamespace="http://schema.soap.ws.nikita.com"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+    <xs:element name="VerificationResult" type="VerificationResult" />
+    <xs:complexType name="VerificationResult">
+        <xs:sequence>
+            <xs:element name="result" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://operations.schema.soap.ws.nikita.com"
+            xmlns:result="http://schema.soap.ws.nikita.com"
+            targetNamespace="http://operations.schema.soap.ws.nikita.com"
+            elementFormDefault="qualified">
+    <xsd:import namespace="http://schema.soap.ws.nikita.com" schemaLocation="VerificationResult.xsd" />
+    <xsd:element name="CodeVerificationRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="code" type="xsd:string" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="CodeVerificationResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="VerificationResult" type="result:VerificationResult" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
